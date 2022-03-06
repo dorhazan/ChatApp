@@ -161,7 +161,9 @@ const SideBar = () => {
                   key={notif._id}
                   onClick={() => {
                     setSelectedChat(notif.chat);
-                    setNotification(notification.filter((n) => n !== notif));
+                    setNotification(notification.filter(
+                        (n) => n.chat.chatName !== notif.chat.chatName
+                      ));
                   }}
                 >
                   {notif.chat.isGroupChat
