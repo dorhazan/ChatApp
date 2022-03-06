@@ -1,0 +1,14 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.badge {
+  top: -10px;
+  right: -10px;
+  padding: 1px 2px;
+  border-radius: 50%;
+  background:lightseagreen;
+  color: white;
+}

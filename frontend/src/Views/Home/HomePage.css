@@ -1,0 +1,24 @@
+.TitleBox{
+  display: flex;
+  justify-content: center;
+  padding: 3;
+  background: whitesmoke;
+  width: 100%;
+  margin: 40px 0 15px 0;
+  border-radius:20px;
+  border-width: 1px;
+}
+
+.TitleText{
+    font-size: 45px;
+    font-family: Work sans;
+    color: royalblue;
+}
+
+.LoginBox{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 4;
+    border-radius: 20px;
+    border-width: 1px;
+}
