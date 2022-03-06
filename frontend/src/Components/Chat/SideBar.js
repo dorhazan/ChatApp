@@ -157,13 +157,15 @@ const SideBar = () => {
             <MenuList pl={2}>
               {!notification.length && "No New Messages"}
               {notification.map((notif) => (
-                <MenuItem
+               <MenuItem
                   key={notif._id}
                   onClick={() => {
                     setSelectedChat(notif.chat);
-                    setNotification(notification.filter(
+                    setNotification(
+                      notification.filter(
                         (n) => n.chat.chatName !== notif.chat.chatName
-                      ));
+                      )
+                    );
                   }}
                 >
                   {notif.chat.isGroupChat
